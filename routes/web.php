@@ -65,6 +65,11 @@ Route::get('/news', [
   'as'=>'news'
 ]);
 
+Route::get('/partners', [
+  'uses'=>'PartnerController@index',
+  'as'=>'partners'
+]);
+
 
 
 Auth::routes();

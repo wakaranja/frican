@@ -86,3 +86,29 @@ $factory->define(App\News::class, function (Faker\Generator $faker) {
 
     ];
 });
+
+$factory->define(App\Partner::class, function (Faker\Generator $faker) {
+
+
+    return [
+
+        'name' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'description' => $faker->paragraphs($nb = 1, $asText = true),
+        'url' => $faker->url,
+        'logolink' =>$faker->imageUrl(300, 300, 'cats')
+
+    ];
+});
+
+$factory->define(App\Network::class, function (Faker\Generator $faker) {
+
+
+    return [
+
+        'name' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'description' => $faker->paragraphs($nb = 1, $asText = true),
+        'url' => $faker->url,
+        'logolink' =>$faker->imageUrl(300, 300, 'cats')
+
+    ];
+});

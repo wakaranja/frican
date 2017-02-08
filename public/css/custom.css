@@ -70,6 +70,6 @@ html, body{
 }
 
 a:hover{
-  background-color: #203470;
+  background-color: #203470 !important;
   color: #FFD700 !important;
 }

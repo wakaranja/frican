@@ -16,7 +16,7 @@ class CreateNetworksTable extends Migration
         Schema::create('networks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('description');
+            $table->string('description',1000);
             $table->string('url');
             $table->string('logolink');
             $table->timestamps();
