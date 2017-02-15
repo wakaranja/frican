@@ -9,7 +9,7 @@
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
-  <title>{{ config('app.name', 'Laravel') }}</title>
+  <title>{{ config('app.name', 'Africa Policy Institute') }}</title>
 
   <!-- Styles -->
   <link rel="stylesheet" href="/css/custom.css">
@@ -38,7 +38,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active" role="presentation"><a href="#">Home </a></li>
                         <li role="presentation"><a href="#">API Centres</a></li>
-                        <li role="presentation"><a href="#">Reports &amp; Publications</a></li>
+                        <li role="presentation"><a href="{{ route('reports') }}">Reports &amp; Publications</a></li>
                         <li role="presentation"><a href="#">News </a></li>
                         <li role="presentation"><a href="#">Media Centre</a></li>
                         <li role="presentation"><a href="#">Partners &amp; Networks</a></li>

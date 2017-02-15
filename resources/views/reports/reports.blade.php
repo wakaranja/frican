@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('content')
     <h1>Reports</h1>
-    {{ $reports->links() }}
+    <div class="col-md-12">
+
+
+    <div class="col-md-12">
+      {{ $reports->links() }}
+    </div>
     @foreach( $reports as $report )
     <div class="col-md-6">
 
@@ -17,5 +22,10 @@
 
     </div>
     @endforeach
-    {{ $reports->links() }}
+    <div class="col-md-12">
+      {{ $reports->links() }}
+    </div>
+
+
+    </div>
 @endsection
