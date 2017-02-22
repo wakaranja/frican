@@ -18,5 +18,6 @@ class DatabaseSeeder extends Seeder
         factory(App\News::class,20)->create();
         factory(App\Partner::class,10)->create();
         factory(App\Network::class,10)->create();
+        factory(App\Television::class,10)->create();
     }
 }

@@ -26,7 +26,7 @@
     <div class="item">
       <img src="/slides/brexit.jpg" alt="..." class="africapi-slide-image">
       <div class="carousel-caption africapi-caption">
-        <h3>brexit</h3>
+        <h3>Brexit</h3>
       </div>
     </div>
   </div>
@@ -41,36 +41,49 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
 <div class="col-md-10 col-md-offset-1">
-  <h1>Recent Reports & Publications</h1><hr>
+  <h1 class="africapi-reports-title">Recent Reports & Publications</h1><hr>
     @foreach($leadreport as $leadreport)
       <div class="col-md-12 africapi-lead-report">
         <div class="col-md-4">
           <img src="/img/300b300.jpg" alt="" class="img-responsive" width="100%">
         </div>
         <div class="col-md-8">
-          <a class="africapi-link africapi-title" href="#">{{ $leadreport->title }}</a>
-
           <p class="africapi-lead-excerpt">{{ $leadreport->excerpt }}{{ $leadreport->excerpt }}{{ $leadreport->excerpt }}
-            {{ $leadreport->excerpt }}{{ $leadreport->excerpt }}{{ $leadreport->excerpt }}<p>
+            {{ $leadreport->excerpt }}{{ $leadreport->excerpt }}{{ $leadreport->excerpt }} </p>
 
         </div>
-      </div>
+      </div><hr>
     @endforeach
 
   @foreach($latestreports as $latestreport)
   <div class="col-md-4">
-    <div class="col-md-12">
-      <a class="africapi-link africapi-title" href="#">{{ $latestreport->title }}</a>
-    </div>
+
     <div class="col-md-12 africapi-report-image">
           <img src="/img/300b300.jpg" alt="" class="img-responsive" width="100%">
     </div>
     <div class="col-md-12">
-          <p class="africapi-excerpt"> {{ $latestreport->excerpt }}</p>
+          <p class="africapi-excerpt"> {{ str_limit($latestreport->excerpt, $limit = 100, $end = '...') }}</p>
     </div>
   </div>
   @endforeach
 </div>
+<div class="col-md-10 col-md-offset-1">
+  <hr>
+    <h1 class="africapi-reports-title">Media Centre</h1>
+    @foreach($featured_video as $featured)
+      <video src="{{ $featured->video_url }}" width="600" height="100" autoplay poster="posterimage.jpg">
+        <video width="320" height="240" controls>
+          <source src="{{ $featured->video_url }}" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+    @endforeach
 
+    <iframe width="750" height="422" src="https://www.youtube.com/embed/HWWSQ9uvl4I?feature=oembed&#038;autoplay=0&#038;rel=0&#038;controls=1&#038;showinfo=1&#038;wmode=opaque" frameborder="0" allowfullscreen></iframe>
+
+
+    </video>
+</div>
 @endsection

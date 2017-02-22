@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.site')
 @section('content')
     <h1>Reports</h1>
     <div class="col-md-12">
@@ -14,7 +14,7 @@
           <img src="/img/300b300.jpg" alt="" width='250' height='250' class="img-responsive">
         </div>
       <div class="col-md-9">
-        <a href="#">{{ $report->title }}</a>
+        <a href="{{ route('report',['id'=>$report->id]) }}">{{ $report->title }}</a>
         <hr>
         {{ $report->excerpt }}
         <hr>

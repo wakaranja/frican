@@ -112,3 +112,15 @@ $factory->define(App\Network::class, function (Faker\Generator $faker) {
 
     ];
 });
+
+$factory->define(App\Television::class, function (Faker\Generator $faker) {
+
+
+    return [
+
+        'video_url' => 'https://www.youtube.com/watch?v=HWWSQ9uvl4I',
+        'featured' =>$faker->randomElement($array = array (0,1)),
+
+
+    ];
+});

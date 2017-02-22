@@ -1,5 +1,5 @@
 html, body{
-  font-family: 'PT Serif', serif !important;
+  background-color: #fff;
 
 }
 
@@ -7,6 +7,7 @@ html, body{
   background-color: #203470;
   margin: 0 0 0 0px !important;
   height: 180px;
+
 
 }
 
@@ -22,7 +23,7 @@ html, body{
   border-bottom: #203470;
   border-radius:0px !important;
   border-color: #fff !important;
-  font-family: 'Raleway', sans-serif !importa;
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .africapi-caption{
@@ -41,6 +42,7 @@ html, body{
   font-weight: bold;
   padding: 5px;
   color: #FFD700;
+  font-family: 'Vollkorn', serif !important;
 }
 
 .africapi-excerpt{
@@ -49,12 +51,14 @@ html, body{
   opacity: 0.9;
   font-style: italic;
   font-size: 1.25em;
-  margin-top: -110px;
+  margin-top: -80px;
+  font-family: 'PT Serif', serif !important;
 }
 
 .africapi-lead-excerpt{
   font-style: italic;
   font-size: 1.25em;
+  font-family: 'PT Serif', serif !important;
 }
 
 .africapi-lead-report{
@@ -73,4 +77,8 @@ html, body{
 a:hover{
   background-color: #203470 !important;
   color: #FFD700 !important;
+}
+
+.africapi-reports-title{
+  font-family: 'Vollkorn', serif !important;
 }

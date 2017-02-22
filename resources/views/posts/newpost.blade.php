@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.site')
 @section('content')
   <div class="container">
     <div class="col-md-8 col-md-offset-2">
@@ -11,7 +11,7 @@
         <input type="hidden" name="commentstatus" value="1">
         <input type="hidden" name="category" value="1">
         <input type="hidden" name="featured_image" value="1.jpg">
-        
+
           <label for="title">Title </label>
           <input class="form-control input-lg" value="{{ old('title') }}" type="text" name="title" required="" placeholder="Post Title" autofocus="" autocomplete="on">
           <label>Excerpt </label>

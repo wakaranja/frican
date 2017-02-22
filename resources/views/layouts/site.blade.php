@@ -27,8 +27,10 @@
 <body>
   <div div="app">
     <div class="page-header africapi-header">
-      <img src="/img/pyramids.png" alt="Africa Policy Institute">
-      <i class="africapi-brand">{{ config('app.name', 'Laravel') }}</i>
+      
+        <img src="/img/mylogo.png" alt="Africa Policy Institute" width="128" height="128" class="responsive">
+    
+      <i class="africapi-brand">{{ config('app.name', 'Africa Policy Institute') }}</i>
         <nav class="navbar navbar-default africapi-navbar">
             <div class="container-fluid">
                 <div class="navbar-header">

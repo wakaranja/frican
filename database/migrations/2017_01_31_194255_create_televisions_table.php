@@ -16,7 +16,7 @@ class CreateTelevisionsTable extends Migration
         Schema::create('televisions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('video_url');
-            
+            $table->integer('featured');
             $table->timestamps();
         });
     }

@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Report;
 use App\Television;
 
-class SiteController extends Controller
+class TelevisionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,10 +15,10 @@ class SiteController extends Controller
     public function index()
     {
         //
-        $leadreport = Report::where('leadreport',1)->get();
-        $latestreports = Report::orderBy('created_at','desc')->skip(1)->take(3)->get();
-        $featured_video = Television::where('featured',1)->get();
-        return view('home',['leadreport'=>$leadreport,'latestreports'=>$latestreports,'featured_video'=>$featured_video]);
+        $televisons = Televison::all()->arrangeBy('created_at','desc');
+
+      return view('videos',['televisions'=>$televisions]);
+
     }
 
     /**
