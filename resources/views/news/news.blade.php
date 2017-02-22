@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.site')
 @section('content')
   <div class="container">
     <h1>News</h1>
@@ -9,7 +9,7 @@
     @foreach($news as $new)
     <div class="col-md-8 col-md-offset-2">
       <b>Title: {{ $new->title }}</b>
-      <hr>
+      <br><br>
       {{$new->content}}
       <br>
       <hr>

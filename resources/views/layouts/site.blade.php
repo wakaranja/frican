@@ -27,9 +27,9 @@
 <body>
   <div div="app">
     <div class="page-header africapi-header">
-      
+
         <img src="/img/mylogo.png" alt="Africa Policy Institute" width="128" height="128" class="responsive">
-    
+
       <i class="africapi-brand">{{ config('app.name', 'Africa Policy Institute') }}</i>
         <nav class="navbar navbar-default africapi-navbar">
             <div class="container-fluid">
@@ -38,12 +38,12 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active" role="presentation"><a href="#">Home </a></li>
-                        <li role="presentation"><a href="#">API Centres</a></li>
+                        <li class="active" role="presentation"><a href="/">Home </a></li>
+                        <li role="presentation"><a href="{{ route('centres') }}">API Centres</a></li>
                         <li role="presentation"><a href="{{ route('reports') }}">Reports &amp; Publications</a></li>
-                        <li role="presentation"><a href="#">News </a></li>
+                        <li role="presentation"><a href="{{ route('news') }}">News </a></li>
                         <li role="presentation"><a href="#">Media Centre</a></li>
-                        <li role="presentation"><a href="#">Partners &amp; Networks</a></li>
+                        <li role="presentation"><a href="{{ route('partners') }}">Partners &amp; Networks</a></li>
                         <li role="presentation"><a href="#">Our Experts</a></li>
                         <li role="presentation"><a href="#">Advisory Board</a></li>
                         <li role="presentation"><a href="#">Associates</a></li>
