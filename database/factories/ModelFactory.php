@@ -124,3 +124,16 @@ $factory->define(App\Television::class, function (Faker\Generator $faker) {
 
     ];
 });
+
+$factory->define(App\Expert::class, function (Faker\Generator $faker) {
+
+
+    return [
+
+        'title' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'name' => $faker->sentence($nbWords = 6, $variableNbWords = true),
+        'bio' => $faker->paragraphs($nb = 1, $asText = true),        
+        'photo_link' =>$faker->imageUrl(300, 300, 'cats')
+
+    ];
+});

@@ -72,14 +72,14 @@
 <div class="col-md-10 col-md-offset-1">
   <hr>
     <h1 class="africapi-reports-title">Media Centre</h1>
-    @foreach($featured_video as $featured)
+    <!-- @foreach($featured_video as $featured)
       <video src="{{ $featured->video_url }}" width="600" height="100" autoplay poster="posterimage.jpg">
         <video width="320" height="240" controls>
           <source src="{{ $featured->video_url }}" type="video/mp4">
             <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
           </video>
-    @endforeach
+    @endforeach -->
 
     <iframe width="750" height="422" src="https://www.youtube.com/embed/HWWSQ9uvl4I?feature=oembed&#038;autoplay=0&#038;rel=0&#038;controls=1&#038;showinfo=1&#038;wmode=opaque" frameborder="0" allowfullscreen></iframe>
 

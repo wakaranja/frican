@@ -12,8 +12,10 @@
   <title>{{ config('app.name', 'Africa Policy Institute') }}</title>
 
   <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
   <link rel="stylesheet" href="/css/custom.css">
   <link href="/css/app.css" rel="stylesheet">
+
 
 
   <!-- Scripts -->
@@ -28,9 +30,11 @@
   <div div="app">
     <div class="page-header africapi-header">
 
-        <img src="/img/mylogo.png" alt="Africa Policy Institute" width="128" height="128" class="responsive">
+        
+          
 
       <i class="africapi-brand">{{ config('app.name', 'Africa Policy Institute') }}</i>
+        
         <nav class="navbar navbar-default africapi-navbar">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -41,10 +45,11 @@
                         <li class="active" role="presentation"><a href="/">Home </a></li>
                         <li role="presentation"><a href="{{ route('centres') }}">API Centres</a></li>
                         <li role="presentation"><a href="{{ route('reports') }}">Reports &amp; Publications</a></li>
+                        <li role="presentation"><a href="{{ route('events') }}">Events </a></li>
                         <li role="presentation"><a href="{{ route('news') }}">News </a></li>
                         <li role="presentation"><a href="#">Media Centre</a></li>
                         <li role="presentation"><a href="{{ route('partners') }}">Partners &amp; Networks</a></li>
-                        <li role="presentation"><a href="#">Our Experts</a></li>
+                        <li role="presentation"><a href="{{ route('experts') }}">Our Experts</a></li>
                         <li role="presentation"><a href="#">Advisory Board</a></li>
                         <li role="presentation"><a href="#">Associates</a></li>
                         <li role="presentation"><a href="#">About API</a></li>

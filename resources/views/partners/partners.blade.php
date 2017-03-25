@@ -1,6 +1,6 @@
 @extends('layouts.site')
 @section('content')
-<div class="col-md-12">
+<div class="container">
   <h1>Partners</h1>
       @foreach($partners as $partner)
 
@@ -24,7 +24,7 @@
       </div>
 
 
-      <div class="col-md-12">
+      <div class="container">
         <h1>Networks</h1>
         @foreach($networks as $network)
         <div class="col-md-3">

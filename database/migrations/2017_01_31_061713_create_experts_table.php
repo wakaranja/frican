@@ -17,7 +17,7 @@ class CreateExpertsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('name');
-            $table->string('bio');
+            $table->string('bio',1000);
             $table->string('photo_link');            
             $table->timestamps();
         });

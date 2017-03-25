@@ -16,7 +16,7 @@ class CreateReportsTable extends Migration
         Schema::create('reports', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('excerpt');
+            $table->string('excerpt',2500);
             $table->string('pdf_link');
             $table->string('featured_image');
             $table->integer('posted_by');

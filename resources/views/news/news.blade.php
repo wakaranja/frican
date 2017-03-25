@@ -7,12 +7,11 @@
     </div>
 
     @foreach($news as $new)
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-8 col-md-offset-2 africapi-box">
       <b>Title: {{ $new->title }}</b>
       <br><br>
       {{$new->content}}
-      <br>
-      <hr>
+      <br>      
     </div>
     @endforeach
     <div class="col-md-8 col-md-offset-2">
