@@ -42,12 +42,19 @@
   </a>
 </div>
 
+<div class="col-md-12">
+
+</div>
+
+Get regular updates on our research and events in your inbox:
+<input data-drupal-selector="edit-email" type="email" id="edit-email" name="email" value="" size="60" maxlength="128" placeholder="Your email" class="form-email required" required="required" aria-required="true">
+<br>
 <div class="col-md-10 col-md-offset-1">
   <h1 class="africapi-reports-title">Recent Reports & Publications</h1><hr>
     @foreach($leadreport as $leadreport)
       <div class="col-md-12 africapi-lead-report">
         <div class="col-md-4">
-          <img src="/img/300b300.jpg" alt="" class="img-responsive" width="100%">
+          <img src="{{ $leadreport->featured_image }}" alt="" class="img-responsive" width="100%">
         </div>
         <div class="col-md-8">
           <p class="africapi-lead-excerpt">{{ $leadreport->excerpt }}{{ $leadreport->excerpt }}{{ $leadreport->excerpt }}
@@ -57,18 +64,41 @@
       </div><hr>
     @endforeach
 
+    <hr>
+
   @foreach($latestreports as $latestreport)
   <div class="col-md-4">
 
     <div class="col-md-12 africapi-report-image">
-          <img src="/img/300b300.jpg" alt="" class="img-responsive" width="100%">
+          <img src="{{ asset('africapireports/'.$latestreport->featured_image) }}" alt="" class="img-responsive" width="100%">
     </div>
     <div class="col-md-12">
-          <p class="africapi-excerpt"> {{ str_limit($latestreport->excerpt, $limit = 100, $end = '...') }}</p>
+          <p class="africapi-excerpt"> {!! str_limit($latestreport->excerpt, $limit = 100, $end = '...') !!}</p>
     </div>
   </div>
   @endforeach
 </div>
+
+<div class="col-md-10 col-md-offset-1">
+  <h1 class="africapi-reports-title">Events</h1><hr>
+    @foreach($events as $event)
+  <div class="col-md-4">
+
+      <div class="event-date">
+        {{ $event->date }}
+      </div>
+      <div class="col-md-12">
+        <h4>{{ $event->name }}</h4>
+        When: {{ $event->date }}
+        Venue: {{ $event->venue }}
+        Organiser: {{ $event->organizer }}
+      </div>
+
+  </div>
+    @endforeach
+</div>
+
+
 <div class="col-md-10 col-md-offset-1">
   <hr>
     <h1 class="africapi-reports-title">Media Centre</h1>
@@ -86,4 +116,6 @@
 
     </video>
 </div>
+
+
 @endsection

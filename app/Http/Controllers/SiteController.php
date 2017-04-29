@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Report;
 use App\Television;
+use App\Event;
 
 class SiteController extends Controller
 {
@@ -19,7 +20,8 @@ class SiteController extends Controller
         $leadreport = Report::where('leadreport',1)->get();
         $latestreports = Report::orderBy('created_at','desc')->skip(1)->take(3)->get();
         $featured_video = Television::where('featured',1)->get();
-        return view('home',['leadreport'=>$leadreport,'latestreports'=>$latestreports,'featured_video'=>$featured_video]);
+        $events = Event::orderBy('created_at','desc')->take(3)->get();
+        return view('home',['leadreport'=>$leadreport,'latestreports'=>$latestreports,'featured_video'=>$featured_video,'events'=>$events]);
     }
 
     /**

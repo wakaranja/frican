@@ -87,16 +87,16 @@ a:hover{
   color: #FFD700 !important;
 }
 
-.africapi-reports-title, 
-.africapi-events-title, 
+.africapi-reports-title,
+.africapi-events-title,
 .africapi-centres-title{
   font-family: 'Vollkorn', serif !important;
-  margin-top: 0;  
+  margin-top: 0;
 }
 
 .africapi-report-title{
   font-family: 'Vollkorn', serif !important;
-  margin-top: 70px;  
+  margin-top: 70px;
 }
 
 
@@ -177,3 +177,57 @@ a:hover{
   .event_image{
     /*margin-right: 10px;*/
   }
+
+  .rings{
+
+    width: 150px;
+    height: 150px;
+    background: #fff;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #d2d2d2;
+    border-top-color: rgb(210, 210, 210);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(210, 210, 210);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(210, 210, 210);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(210, 210, 210);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    position: absolute;
+    transform: scale(0.1,0.1);
+    opacity: 0;
+    animation: ring-1 3000ms ease-out infinite;
+    animation-name: ring-1;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-out;
+    animation-delay: initial;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-fill-mode: initial;
+    animation-play-state: initial;
+  }
+
+  
